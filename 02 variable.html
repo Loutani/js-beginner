@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+<body>
+    <script>
+        //before ECMAScript 6 (2015)
+        //definition GLOBAL LOCAL
+        var variableName = 'hello world';
+
+        //LOCAL { BLOCKS } ECMASCRIPT 6
+        let variableName1 = 'just variable value';
+        
+        //constant, cannot be changed used for constant or function definition ECMASCRIPT 6
+        const cosntantName = 'constant variable';
+
+        //VAR CAN HAVE GLOBAL ACCESS 
+        var productPrice = 2000;
+
+        function f1() {
+            productPrice = 3000
+        }
+
+        console.log(productPrice)
+
+        f1();
+
+        console.log(productPrice)
+
+        //CAN ACCESS VAR VARIABLE BY window['productPrice'] AND CHANGE IT VALUE
+
+        //NAMING CONVENTION (variable and function): camelCase ex productPrice 
+
+    </script>
+</body>
+</html>

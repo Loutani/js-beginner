@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //BEFORE ECMASCRIPT 6
+        // function functionName(args1, ... , argn) {
+        //     ... statements
+        //     return resulta;
+        // }
+
+        //ECMASCRIPT 6
+        // const functionNameAsConst = (arg1, ..., argn) => {
+        //     ... statements
+        //     return resulta;
+        // }
+        // if number of arguments:
+        //      === 0 will be = () => { }
+        //      === 1 will be = n => { }
+        //      > 1 will be = (arg1, ..., argn) => { }
+
+        //ecrice une fonction represente factoriel(n) probleme
+        // factoriel(4) = 1 * 2 * 3 * 4 = 24 problem solving, n doit etre >= 0 , factoriel(0) = 1, factoriel(1) = 1
+        // factoriel(n) = 1 * 2 * 3 * ... * n
+        // fact = fact * x
+        // loop for () 
+
+        //READABILITY OR PERFORMANCE 
+
+        // function factoriel(n) {
+
+        //     let fact = 1;
+
+        //     for(x = 2; x <= n; x++) {
+        //         fact = fact * x
+        //     }
+
+        //     return fact
+        // }
+
+        // let fact4 = factoriel(4);
+
+        // console.log(fact4)
+
+        // const factoriel = n => {
+        //     let fact = 1;
+
+        //     for(x = 2; x <= n; x++) {
+        //         fact = fact * x
+        // }
+
+        //     return fact;
+        // }
+
+        // let fact4 = factoriel(4);
+
+        // console.log(fact4)
+
+        // create function maxNumber() that return max number of numbers list
+        // maxNumber(2,7,15,1,8) => 15
+
+        // function maxNumber() {
+
+        //     let max     = arguments[0],
+        //         length  = arguments.length - 1;
+
+        //     for(x = 1; x < length; x++) {
+
+        //         let firstValue = arguments[x];
+
+        //         if(max < firstValue) {
+        //             max = firstValue
+        //         }
+
+        //     }
+            
+        //     return max;
+
+        // }
+
+        // function minNumber() {
+
+        //     let min     = arguments[0],
+        //         length  = arguments.length - 1;
+
+        //     for(x = 1; x < length; x++) {
+
+        //         let firstValue = arguments[x];
+
+        //         if(min > firstValue) {
+        //             min = firstValue
+        //         }
+
+        //     }
+
+        //     return min;
+
+        // }
+
+        // let max = maxNumber(2,7,15,100,8,76),
+        //     min = minNumber(2,7,15,100,8,76);
+
+        // console.log(max)
+        // console.log(min)
+
+        // f1();
+
+        // function f1() {
+        //     console.log('salut')
+        // }
+
+        // let f2 = () => {
+        //     console.log('hello')
+        // }
+
+        // f2();
+
+        //ECMA SCRIPT arrow function 
+        // f2 = () => {
+        //     console.log('another function')
+        // }
+
+        // f2();
+
+        //nested function definition 
+        // function grandParent() {
+
+        //     console.log('grand parent');
+
+        //     function parent() {
+
+        //         console.log('parent');
+
+        //         function child() {
+
+        //             console.log('child');
+
+        //         }
+
+        //         child()
+        //     }
+
+        //     parent()
+        // }
+
+        // grandParent();
+
+
+        // function grandParent() {
+        //     console.log('grand parent');
+        // }
+
+        // function parent() {
+        //     console.log('parent');
+        // }
+
+        // function child() {
+        //     console.log('child');
+        // }
+
+        // grandParent();
+
+        // parent();
+
+        // child();
+
+        //function can return function definition
+        // function functionDefinition() {
+        //     return function() {
+        //         console.log('i am function definition')
+        //     }
+        // }
+
+        // let function1 = functionDefinition();
+
+        // console.log(function1)
+
+        // function1()
+
+        // function function2() {
+        //     let x = 20;
+
+        //     function function3(x) {
+        //         return x * 10;
+        //     }
+
+        //     return function3;
+        // }
+
+        // let func2 = function2()(100);
+
+        // console.log(func2)
+
+        //self invoke function jquery in old version
+        // (function(arg) {
+        //     console.log(arg + ' i am self invoke function')
+        // })('hello')
+
+        //self invoke function used in bootstrap old version
+        // !function() {
+        //     console.log('solve for self invoke function')
+        // }()
+
+        //function default value ECMASCRIPT 6
+        // function function4(age = 30) {
+        //     console.log('i am ' + age + ' years old')
+        // }
+
+        // function4()
+        // function4(29)
+
+        // //age is optional parameter
+        // function function5(name, age = 30) {
+        //     console.log(name, age)
+        // }
+
+        // function5('mohammed')
+
+        //evil function
+        //eval
+        //eval('let a = 2022; console.log(a)')
+
+        //uneval : Deprecated
+        // let jsCode = uneval(alert('good morning'))
+
+        //exercice: 
+        //create function sum(1,7,9,10,6,4) = 37, with out arrow function 
+        
+    </script>
+</body>
+</html>
