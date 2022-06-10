@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //number are float and integer
+        //float like 10.5
+        //integer like 10
+
+        //Decimal numbers (10)
+        let a = 2022;
+
+        //Octal numbers (8): begin with 0, all the number are less then or equal to 7
+        let b = 010; // 0*8^0 + 1*8^1 = 0 + 8 = 8
+
+        //Hexadecimal numbers (16): begin with 0x or 0X , all the number are less then or equal to F = 15 (0123456789ABCDEF) 
+        let c = 0x10; //0*16^0 + 1*16^1 = 0 + 16 = 16
+        let d = 0X10; //0*16^0 + 1*16^1 = 0 + 16 = 16
+
+        //Binary numbers (2): begin with 0b, 0B , all the number are less then or equal to 1
+        let e = 0b10; // 0*2^0 + 1*2^1 = 0 + 2 = 2
+        let f = 0B10; // 0*2^0 + 1*2^1 = 0 + 2 = 2
+
+        // console.log(a, b, c, d, e, f)
+
+        //We have Object call Number have multiple CONSTANTS and functions
+
+        //Nmuber CONSTANTS:
+        // console.log(Number.MAX_VALUE)
+        // console.log(Number.MIN_VALUE)
+
+        // console.log(Number.NaN)
+        // console.log(NaN)
+
+        //Note: Number.NaN !== NaN
+
+        // console.log(Number.NEGATIVE_INFINITY)
+        // console.log(Number.POSITIVE_INFINITY)
+
+        // console.log(Number.EPSILON)
+
+        // console.log(Number.MIN_SAFE_INTEGER)
+        // console.log(Number.MAX_SAFE_INTEGER)
+
+        //Number functions:
+        //parseFloat: parse float number from string
+        let weight  = '72.832 Kg',
+            weight2 = 'KG 72.832';
+
+        // console.log(Number.parseFloat(weight), Number.parseFloat(weight2))
+        // console.log(parseFloat(weight), parseFloat(weight2))
+
+        //parseInt: parse integer number from string
+        let year = '2022.2 year',
+            year2 = 'year 2022.2';
+
+        // console.log(Number.parseInt(year), Number.parseInt(year2))
+        // console.log(parseInt(year), parseInt(year2))
+
+        //isInfinite: check if the number are infinite or no 
+        
+        // console.log(Number.isFinite(Number.NEGATIVE_INFINITY))
+        // console.log(Number.isFinite(Number.POSITIVE_INFINITY))
+
+        // console.log(isFinite(Number.NEGATIVE_INFINITY))
+        // console.log(isFinite(Number.POSITIVE_INFINITY))
+
+        // console.log(isFinite(2022))
+
+        //isInteger: check if the given number is integer
+        //Note: Will Produce error console.log(isInteger(2022))
+
+        // console.log(Number.isInteger(2022))
+        // console.log(Number.isInteger(2022.2))
+
+        //IsNaN: check if the giver value is not a number or no
+        // console.log(Number.isNaN(20))
+        // console.log(isNaN('20'))
+        // console.log(isNaN('20A'))
+
+        //isSafeInteger: check if the given value is in [Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER]
+        //Note: will produce error console.log(isSafeInteger(20))
+
+        // console.log(Number.isSafeInteger(20))
+        // console.log(Number.isSafeInteger('hello'))
+
+        //function inside the number ifself
+
+        //toExponential 
+        let number1 = 100000;
+
+        // console.log(number1.toExponential())
+
+        //toFixed
+        let number2 = 2/3;
+
+        // console.log(number2)
+        // console.log(number2.toFixed(2))
+        // console.log(number2.toFixed())
+
+        //toPrecision 
+
+        // console.log(number2.toPrecision(2))
+        // console.log(number2.toPrecision())
+
+        //Number() as function: if the value contain string it will return NaN
+        let number3 = 2022,
+            number4 = '2022',
+            number5 = '2022 YEAR',
+            weight3 = 76.5,
+            weight4 = '76.5';
+
+        // console.log(
+        //     Number(number3),
+        //     Number(number4),
+        //     Number(number5),
+        //     Number(weight3),
+        //     Number(weight4),
+        // )
+
+        //why? console.log(109 / (1.09 * 100))
+        //why? console.log(0.2 + 0.1)
+    </script>
+</body>
+</html>
