@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Date Time: <span id="date"></span></p>
+
+    <script>
+        //new Date() return current date time
+        let date1 = new Date();
+        // console.log(date1)
+
+        //Date.now(): return current date time as timestamp syntax
+        let date2 = Date.now();
+        // console.log(date2)
+
+        //new Date('year', 'month', 'days', 'hours', 'minutes', 'seconds') return current date time
+        let date3 = new Date(2020, 4, 4, 10, 30)
+        let date5 = new Date('Mon May 04 2020');
+
+        // console.log(date3)
+        // console.log(date5)
+
+        //new Date(timestamp): return current date time from timestamp value
+        let date4 = new Date(1654882425380)
+
+        // console.log(date4)
+
+        //getDate()
+        // console.log(date1.getDate())
+
+        //getDay() : 0 is sunday and 6 is saturday
+
+        // console.log(date1.getDay())
+
+        //getFullYear()
+        // console.log(date1.getFullYear())
+
+        //getHours()
+        // console.log(date1.getHours())
+
+        //getMilliseconds()
+        // console.log(date1.getMilliseconds())
+
+        //getMinutes()
+        // console.log(date1.getMinutes())
+
+        //getMonth() : 0 is january and 11 is december
+        // console.log(date1.getMonth())
+
+        //getSeconds()
+        // console.log(date1.getSeconds())
+
+        //getTime()
+        // console.log(date1.getTime())
+
+        //getTimezoneOffset() return the difference in minute beetwen you local time zone and GMT+0
+        // console.log(date1.getTimezoneOffset())
+
+        //getUTCDate() return the day by universal time
+        // console.log(date1.getUTCDate())
+
+        //getUTCDay() return the number of the day by universal time 0 -> 6
+        // console.log(date1.getUTCDay())
+
+        //getUTCFullYear() return the year by universal time
+        // console.log(date1.getUTCFullYear())
+
+        //getUTCHours() return the hours by universal time
+        // console.log(date1.getUTCHours())
+
+        //getUTCMilliseconds() return the milliseconds by universal time
+        // console.log(date1.getUTCMilliseconds())
+
+        //getUTCMinutes() return the minutes by universal time
+        // console.log(date1.getUTCMinutes())
+
+        //getUTCMonth() return the month by universal time
+        // console.log(date1.getUTCMonth())
+
+        //getUTCSeconds() return the seconds by universal time
+        // console.log(date1.getUTCSeconds())
+
+        //getYear() Deprecated: 
+        // console.log(date1.getYear())
+
+        //Example using the get from Date and show it in the <span>
+        let spanElement = document.getElementById('date');
+
+        //spanElement.innerText = date1;
+
+        //dd/mm/yyyy hh:mm:ss
+        let currentYear     = date1.getFullYear(),
+            currentMonth    = date1.getMonth(),
+            currentDay      = date1.getDate(),
+            currentHour     = date1.getHours(),
+            currentMinute   = date1.getMinutes(),
+            currentSeconds  = date1.getSeconds();
+
+        // let fullDateTime = currentYear + '/' + currentMonth + '/' + currentDay + ' ' + currentHour + ':' + currentMinute + ':' + currentSeconds;
+
+        // let fullDateTime = currentYear + '/' + currentMonth + '/' + currentDay + ' <br>' + currentHour + ':' + currentMinute + ':' + currentSeconds;
+
+        // spanElement.innerHTML = fullDateTime
+    </script>
+</body>
+</html>
