@@ -106,6 +106,157 @@
         // let fullDateTime = currentYear + '/' + currentMonth + '/' + currentDay + ' <br>' + currentHour + ':' + currentMinute + ':' + currentSeconds;
 
         // spanElement.innerHTML = fullDateTime
+
+        // setDate()
+        let currentDay1 = date1.getDate();
+        let nextDay     = currentDay1 + 95;
+
+        // date1.setDate(nextDay);
+        // console.log(date1)
+
+        // setFullYear()
+        let currentYear1 = date1.getFullYear();
+        let nexYear      = currentYear1 + 3;
+
+        // date1.setFullYear(nexYear);
+        // console.log(date1)
+
+        // setHours()
+        let currentHour1 = date1.getHours();
+        let nextHour = currentHour1 + 10;
+
+        // date1.setHours(nextHour);
+        // console.log(date1)
+
+        // setMilliseconds()
+        let currentMilliseconds = date1.getMilliseconds();
+        let nexMilliseconds = currentMilliseconds + 250;
+
+        // date1.setMilliseconds(nexMilliseconds);
+        // console.log(date1.getMilliseconds())
+
+        // setMinutes()
+        let currentMinute1 = date1.getMinutes();
+        let nextMinute      = currentMinute1 + 40;
+
+        // date1.setMinutes(nextMinute);
+        // console.log(date1)
+
+        // setMonth()
+        // date1.setMonth(1);
+        // date1.setDate(28);
+        // console.log(date1)
+
+        // setSeconds()
+        // let currentSeconds1 = date1.getSeconds();
+        // let nextSeconds     = currentSeconds1 + 20;
+
+        // date1.setSeconds(nextSeconds);
+        // console.log(date1)
+
+        // setTime()
+        // let currentTime = Date.now();
+        // date1.setTime(currentTime + 10800000)
+        // console.log(date1)
+
+        // setUTCDate()
+
+        // date1.setUTCDate(15);
+        // console.log(date1);
+
+        // setUTCFullYear()
+
+        // date6.setUTCFullYear(2);
+        // console.log(date6)
+
+        // setUTCHours()
+        // date1.setUTCHours(2);
+        // console.log(date1);
+
+        // setUTCMilliseconds()
+        // date1.setUTCMilliseconds(300);
+        // console.log(date1.getUTCMilliseconds())
+
+        // setUTCMinutes()
+        // date1.setUTCMinutes(20);
+        // console.log(date1)
+
+        // setUTCMonth()
+        // date1.setUTCMonth(2);
+        // console.log(date1)
+
+        // setUTCSeconds()
+        // date1.setUTCSeconds(20);
+        // console.log(date1)
+
+        // setYear() Deprecated
+
+        // toDateString(): get date from Date object as String
+
+        let dateString = date1.toDateString();
+        // console.log(typeof date1)
+        // console.log(typeof dateString)
+
+        // toISOString()
+        let dateISOString = date1.toISOString();
+        // console.log(date1)
+        // console.log(dateISOString)
+
+        // toJSON()
+        let DateToJSON = date1.toJSON();
+        // console.log(date1)
+        // console.log(DateToJSON)
+
+        // toGMTString() Deprecated
+
+        // toLocaleDateString()
+        let localeDateString = date1.toLocaleDateString()
+        // console.log(date1)
+        // console.log(localeDateString)
+
+        // toLocaleString()
+        let localString = date1.toLocaleString();
+        // console.log(date1)
+        // console.log(localString)
+
+        // toLocaleTimeString()
+        let localTimeString = date1.toLocaleTimeString();
+        // console.log(date1)
+        // console.log(localTimeString)
+
+        // toString()
+        // console.log(typeof date1)
+        // console.log(typeof date1.toString())
+        // console.log(typeof(date1.toString()))
+
+        // toTimeString()
+        let timeString = date1.toTimeString();
+        // console.log(date1)
+        // console.log(timeString)
+
+        // toUTCString()
+        let UTCString = date1.toUTCString()
+        // console.log(date1)
+        // console.log(UTCString)
+
+        // valueOf()
+        let currentMillisecondsFromDate = date1.valueOf();
+        // console.log(currentMillisecondsFromDate)
+
+        // toSource() : Non-standard
+
+
+        // function createDateWithUTC(newUTC = 'UTC+0100') {
+        //     let currentDate = new Date().toString(),
+        //         dateContentAsArray = currentDate.split(' ');
+            
+        //     dateContentAsArray[5] = newUTC;
+
+        //     return new Date(dateContentAsArray.join(' '))
+        // }
+
+        // let date6 = createDateWithUTC('UTC+0400');
+        // console.log(date6);
     </script>
 </body>
 </html>
