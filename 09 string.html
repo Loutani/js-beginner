@@ -8,13 +8,79 @@
 </head>
 <body>
     <script>
+        //define string
         let string1 = 'string 1',
             string2 = "string 2",
             string3 = `string 3`;
 
-        console.log(string1)
-        console.log(string2)
-        console.log(string3)
+        // console.log(string1)
+        // console.log(string2)
+        // `` ECMASCRIPT 6 to generate Template literals  
+        // console.log(string3)
+
+        //ASCII CODE WITH Hexa
+        // 41 -> 5A => A to Z https://unicodelookup.com/#latin/1
+        // 61 -> 7A => a to z https://unicodelookup.com/#latin/1
+        let a = '\xA9';
+        let b = '\u0041' //https://fr.wikipedia.org/wiki/Table_des_caract%C3%A8res_Unicode_(0000-0FFF)
+
+        // console.log(a)
+        // console.log(b)
+
+        //Not recomended
+        let string4 = new String('string from object');
+        let string5 = new String('2' + 5);
+
+        // console.log(string4)
+        // console.log(string5)
+
+        //str.length: return the length of string
+        let helloString = "HELLO";
+
+        // console.log(helloString.length)
+
+        let age = 29;
+
+        // console.log('i am ' + age + ' years old')
+        // console.log(`i am ${age} years old`)
+
+        let number1 = 20,
+            number2 = 30;
+
+        // console.log(`${number1} + ${number2} = ${number1 + number2}`)
+
+        let moyen = 11;
+
+        // function isGetTheYear(moyen)
+        // {
+        //     return moyen >= 10 ? 'Pass' : 'no Pass'
+        // }
+
+        // console.log(`${isGetTheYear(moyen)}`)
+        // console.log(`${isGetTheYear(9)}`)
+
+        // console.log(`${ age > 16 ? 'adult' : 'under age' }`)
+
+
+        // let currentDate = new Date();
+
+        // let currentYear     = currentDate.getFullYear(),
+        //     currentMonth    = currentDate.getMonth(),
+        //     currentDay      = currentDate.getDate(),
+        //     currentHour     = currentDate.getHours(),
+        //     currentMinute   = currentDate.getMinutes(),
+        //     currentSeconds  = currentDate.getSeconds();
+
+        // let fullDateTime = `${currentYear}/${currentMonth}/${currentDay} ${currentHour}:${currentMinute}:${currentSeconds}`;
+
+        // console.log(fullDateTime)
+
+        //TP: create function that return date with format called createDate(format).
+        //ex: 
+        //  createDate()        => 12/6/2022
+        //  createDate('USA')   => 6/12/2022
+
+
     </script>
 </body>
 </html>
