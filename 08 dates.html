@@ -101,11 +101,11 @@
             currentMinute   = date1.getMinutes(),
             currentSeconds  = date1.getSeconds();
 
-        // let fullDateTime = currentYear + '/' + currentMonth + '/' + currentDay + ' ' + currentHour + ':' + currentMinute + ':' + currentSeconds;
+        let fullDateTime = currentYear + '/' + currentMonth + '/' + currentDay + ' ' + currentHour + ':' + currentMinute + ':' + currentSeconds;
 
         // let fullDateTime = currentYear + '/' + currentMonth + '/' + currentDay + ' <br>' + currentHour + ':' + currentMinute + ':' + currentSeconds;
 
-        // spanElement.innerHTML = fullDateTime
+        spanElement.innerHTML = fullDateTime
 
         // setDate()
         let currentDay1 = date1.getDate();
@@ -257,6 +257,62 @@
 
         // let date6 = createDateWithUTC('UTC+0400');
         // console.log(date6);
+
+        //setTimeout(): execute function after time in milliseconds
+
+        // let currentSetTimeOut = setTimeout(function() {
+        //     console.log('good morning')
+        // }, 2000)
+
+        // function saySomething(string) {
+        //     console.log(string)
+        // }
+
+        // setTimeout(function() {
+        //     saySomething('good night')
+        // }, 2000);
+
+        //Note: will execute directely setTimeout(saySomething('good night'), 2000)
+
+        // setTimeout(
+        //     saySomething.bind(null, 'good night'),
+        //     2000
+        // )
+
+        //clearTimeout(setTimeoutIndex)
+        // clearTimeout(currentSetTimeOut);
+
+        //setInterval()
+        // let currentSetInterval = setInterval(function(){
+        //     console.log('i am here');
+        // }, 2000)
+
+        //clearInterval(setIntervalIndex)
+        // clearInterval(currentSetInterval);
+
+        // let date7 = new Date();
+
+        // setInterval(() => {
+        //     console.log(new Date())
+        //     console.log(date7)
+        //     console.log("---------------------------")
+        // }, 1000);
+        
+        // setInterval( () => {
+        //     let currentDate = new Date();
+
+        //     let currentYear     = currentDate.getFullYear(),
+        //         currentMonth    = currentDate.getMonth(),
+        //         currentDay      = currentDate.getDate(),
+        //         currentHour     = currentDate.getHours(),
+        //         currentMinute   = currentDate.getMinutes(),
+        //         currentSeconds  = currentDate.getSeconds();
+
+        //     let fullDateTime = currentYear + '/' + currentMonth + '/' + currentDay + ' ' + currentHour + ':' + currentMinute + ':' + currentSeconds;
+
+        //     spanElement.innerHTML = fullDateTime
+        // }, 1000)
+
     </script>
 </body>
 </html>
