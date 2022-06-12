@@ -108,55 +108,127 @@
         // console.log(ukDate)
         // console.log(usaDate)
 
-        // charAt
+        // charAt(index): index must be >= 0 and < str.length
+        let str = 'HeLlo Big Boy';
+        // console.log(str.charAt(12));
 
-        // charCodeAt
+        // charCodeAt(index) return char code as decimal
+        // console.log(str.charCodeAt(2))
 
         // codePointAt
+        let strCode = '☃★♲';
+        // console.log(strCode.codePointAt(0));
+        // console.log(strCode.codePointAt(1));
+        // console.log(strCode.codePointAt(2));
 
-        // indexOf
+        // indexOf(string): >= 0 if found the string, else -1
+        // console.log(str.indexOf("Bi"))
+        // console.log(str.indexOf("BiA"))
 
-        // lastIndexOf
+        // lastIndexOf(string) -1 if not found else return the index from the last char
+        // lastIndexOf(string, position) -1 if not found else return the index from the given position
+        // console.log(str.lastIndexOf('Bi'))
+        // console.log(str.lastIndexOf('Bi', 5))
+        // console.log(str.lastIndexOf('Bi', 6))
 
-        // startsWith
+        // startsWith(str) check if the string begin with str 
+        // console.log(str.startsWith('Bi'))
+        // console.log(str.startsWith('Bo'))
+        // console.log(str.startsWith('He'))
 
-        // endsWith
+        // endsWith(str) check if the string end with str
+        // console.log(str.endsWith('Bi'))
+        // console.log(str.endsWith('oy'))
+        // console.log(str.endsWith('He'))
 
-        // includes
-
-        // concat
-
-        // fromCharCode
+        // includes(str) check if the string contain str
+        // includes(str, position) check if the string contain str from position
+        
+        // console.log(str.includes('Boy'))
+        // console.log(str.includes('Moy'))
+        // console.log(str.includes('Big', 6))
+        
+        // concat(str1, str2, ... , strn) : return the concat string
+        // console.log('Hello'.concat(' ', 'Big', ' ', 'Boy'));
+        
+        // String.fromCharCode(code1, code2, ..., coden) 
+        // console.log(String.fromCharCode(9731, 9733, 9842))
 
         // fromCodePoint
+        // console.log(String.fromCodePoint(9731, 9733, 9842))
 
-        // split
+        // split(stringSeparator): array
+        // console.log(str.split(''))
+        // console.log(str.split(' '))
+        // console.log(str.split('B'))
 
-        // slice
+        // slice(beginIndex) 
+        // slice(beginIndex, endIndex) 
+        // console.log(str.slice(6))
+        // console.log(str.slice(6, 9))
+        // console.log(str.slice(9, 6))
 
-        // substring
+        // substring(startIndex)
+        // substring(startIndex, endIndex)
+        // console.log(str)
+        // console.log(str.substring(3))
+        // console.log(str.substring(3, 5))
 
         // substr(): Deprecated
 
-        // match
+        // match(regExp)
+        //regExp = /pattern/flags
+        // console.log(str.match(/[a-z]/g))
+        // console.log(str.match(/[A-Z]/g))
 
-        // matchAll
+        // matchAll(regExp) must have the 'g' (global) flag
+        // console.log(str.matchAll(/[a-z]/g).next())
+        // console.log(str.matchAll(/[A-Z]/g).next())
+        
+        // replace(string|regExp):
+        let games = 'i love games, i like play games every day, games are awsome';
 
-        // replace
+        // console.log(games.replace('games', 'nothing'))
+        
+        // replaceAll(string|regExp)
+        // console.log(games.replaceAll('games', 'nothing'))
 
-        // replaceAll
-
-        // search
+        // search(regExp)
+        // console.log(games.search(/games/))
 
         // toLowerCase
+        console.log(str.toLowerCase())
 
         // toUpperCase
+        console.log(str.toUpperCase())
 
-        // normalize
+        // normalize(form) 
+        //NFC Canonical Decomposition, followed by Canonical Composition
+        //NFD Canonical Decomposition
+        //NFKC Compatibility Decomposition, followed by Canonical Composition
+        //NFKD Compatibility Decomposition
+        // let string6 = '\u0041\u006d\u00e9\u006c\u0069\u0065';
+        // console.log(string6.normalize('NFC'))
 
-        // repeat
+        // repeat(number)
+            console.log('hello '.repeat(5))
 
-        // trim
+        // trim()
+        console.log(`  HI  `);
+        console.log(`  HI  `.trim());
+
+        //trimStart()
+        console.log(`  HI  `.trimStart());
+
+        //trimLeft()
+        console.log(`  HI  `.trimLeft());
+        
+        //trimEnd()
+        console.log(`  HI  `.trimEnd());
+
+        //trimRight()
+        console.log(`  HI  `.trimRight());
+
     </script>
 </body>
 </html>
