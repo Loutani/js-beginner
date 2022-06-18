@@ -90,6 +90,188 @@
         //     elementAtPosition = data[position];
 
         // console.log(firstArrayElement, lastArrayElement, elementAtPosition);
+
+        /*
+         * properties
+        */
+
+        //1- length: is the count of array elemenst
+        // console.log(data.length)
+
+        /*
+         * methods
+        */
+
+        //1- at(position) return the element with position
+        // console.log(data.at(0))
+        // console.log(data.at(2))
+        // console.log(data.at(3))
+        // console.log(data.at(6))
+
+        //2- concat(array1, array2, ..., arrayn) : merge arrays
+        // let firstArray = [10, 15,17],
+        //     secondArrray = [5, 9, 10];
+
+        // console.log([].concat(firstArray, secondArrray));
+        // console.log(firstArray.concat(secondArrray));
+
+        //3- entries(): return iterator type
+        // let iteratorData = data.entries();
+
+        // console.log(iteratorData.next())
+        // console.log(iteratorData.next())
+        // console.log(iteratorData.next())
+        // console.log(iteratorData.next())
+        // console.log(iteratorData.next())
+
+        //4- every(callback) check if the every item inside the array passed the condition with callback
+        // let notes = [10, 3, 12, 17];
+        // let passed = notes.every( item => item >= 5)
+        // console.log(passed)
+
+        //5- fill(value) : put value for all item inside the array
+        // fill(value, start)
+        // fill(value, start, end)
+
+        // let arr = [1,2,3,4,5];
+        // console.log(arr.fill(0))
+        // console.log(arr.fill('A', 2))
+        // console.log(arr.fill('B', 1, 3))
+
+        //6- filter(callback) return the item make the callback conidtions true
+        //EX1:
+        // let notes = [10, 3, 12, 17];
+        // let passedNotes = notes.filter(note => note >= 5);
+        // let failedNote = notes.filter(note => note < 5);
+
+        // console.log(passedNotes, failedNote)
+
+        //EX2:
+        // let notes = [
+        //     {
+        //         moduleName: 'SI',
+        //         note: 10
+        //     },
+        //     {
+        //         moduleName: 'SE',
+        //         note: 3
+        //     },
+        //     {
+        //         moduleName: 'ALGO',
+        //         note: 12
+        //     },
+        //     {
+        //         moduleName: 'WEB',
+        //         note: 17
+        //     },
+        // ];
+
+        // let passedNotes = notes.filter(note => note['note'] >= 5);
+        // let failedNote = notes.filter(note => note['note'] < 5);
+
+        // console.log(passedNotes, failedNote)
+
+        //7- find(callback) return the first element make the callbakc true
+        // let notes = [6, 7 ,1, 10, 20];
+        // let firstNotes = notes.find(note => note >= 10)
+        // console.log(firstNotes)
+
+        //8- findIndex(callback) return the index of the first item make the callback true
+        // let notes = [6, 7 ,1, 10, 20];
+        // let firstNotes = notes.findIndex(note => note >= 10)
+        // console.log(firstNotes)
+
+        //9- flat(): method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth
+        // let nestedData = [1, 5, 'A', ['B', 5, 8, ['C', 9]]];
+        // console.log(nestedData.flat().flat())
+
+        //10- flatMap() used with map (map is array but all the item should not be repeated)
+
+        //11- forEach() loop throw array items
+
+        //12- from(element) create array from given element
+        // from(array, callback)
+
+        // let str1 = 'HELLO WORLD',
+        //     notes = [5, 2, 3 , 5];
+
+        // let arr1 = Array.from(str1);
+        // let newNotes = Array.from(notes, note => note * 2);
+
+        // console.log(arr1)
+        // console.log(newNotes)
+
+        //13- group() Experimental
+        // let notes = [
+        //     {
+        //         name: 'mohammed',
+        //         module: 'SE',
+        //         note: 10
+        //     },
+        //     {
+        //         name: 'mohammed',
+        //         module: 'SI',
+        //         note: 14
+        //     },
+        //     {
+        //         name: 'zakaria',
+        //         module: 'SE',
+        //         note: 7
+        //     },
+        //     {
+        //         name: 'zakaria',
+        //         module: 'SI',
+        //         note: 18
+        //     },
+        //     {
+        //         name: 'yasser',
+        //         module: 'SE',
+        //         note: 16
+        //     }
+        // ]
+        // let result = notes.group({name})
+
+        ///should return
+        /// result = {
+        ///     'mohammed': [
+        ///         {
+        ///             name: 'mohammed',
+        ///             module: 'SE',
+        ///             note: 10
+        ///         },
+        ///         {
+        ///             name: 'mohammed',
+        ///             module: 'SI',
+        ///             note: 14
+        ///         },
+        ///     ],
+        ///     'zakaria': [
+        ///         {
+        ///             name: 'zakaria',
+        ///             module: 'SE',
+        ///             note: 7
+        ///         },
+        ///         {
+        ///             name: 'zakaria',
+        ///             module: 'SI',
+        ///             note: 18
+        ///         }
+        ///     ],
+        ///     'yasser': [
+        ///         {
+        ///             name: 'yasser',
+        ///             module: 'SE',
+        ///             note: 16
+        ///         }
+        ///     ]
+        /// }
+
+        //14- groupToMap() Experimental , should work with map
+
+        //TP: write the equivalent code of from()
+        //syntax fromEquivalent(array, callback) {} 
+        //ex: fromEquivalent(notes, (note) => note * 3)
+        
     </script>
 </body>
 </html>
