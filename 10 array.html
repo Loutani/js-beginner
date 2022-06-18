@@ -9,16 +9,71 @@
 <body>
     <script>
 
-        //array definition
-        //normal way
+        /*
+         * array definition
+        */
+
+        //1- normal way
         let data = ['id', 'name', 'email', 'created_at']
 
-        //using new Array()
+        //2- using new Array()
         let newData = new Array('id', 'name', 'email', 'created_at')
 
-        //using split() from string
+        //3- using split() from string
         let splitedData = 'id,name,email,created_at'.split(',')
         
+        // console.table(data)
+        // console.table(newData)
+        // console.table(splitedData)
+
+        /*
+         * loop throw array
+        */
+
+        //1- using for() {}
+        // for(let i= 0; i < data.length; i++) {
+        //     console.log(`index: ${i}, value ${data[i]}`)
+        // }
+
+        //2- using while {}
+        // let i = 0;
+
+        // while(i < data.length) {
+        //     console.log(`index: ${i}, value ${data[i]}`);
+        //     i++;
+        // }
+
+        //3- using forEach((item, index) => {}) : item => value, index => index
+        //note: you can use forEach(item => {}) : item => value
+        // data.forEach( item => {
+        //     console.log(`value: ${item}`);
+        // })
+
+        // data.forEach( (item, index) => {
+        //     console.log(`index: ${index}, value ${item}`);
+        // })
+
+        //4- using for( of ) {}
+        // let i = 0;
+        // for(let item of data) {
+        //     console.log(`index: ${i}, value ${item}`);
+        //     i++
+        // }
+
+        //5- using for( in ) {}
+        // for(let index in data) {
+        //     let item = data[index];
+        //     console.log(`index: ${index}, value ${item}`);
+        // }
+
+        //Note: be carefull of using do {} while() : if the array is empty you will get undefined value
+        // let emptyArray = [],
+        //     index = 0;
+
+        // do {
+        //     console.log(`index: ${index}, value ${emptyArray[index]}`);
+        // }while(index < emptyArray.length)
+
     </script>
 </body>
 </html>
