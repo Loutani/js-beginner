@@ -271,7 +271,39 @@
         //TP: write the equivalent code of from()
         //syntax fromEquivalent(array, callback) {} 
         //ex: fromEquivalent(notes, (note) => note * 3)
+
+        //SOLUTION
+        // function fromEquivalent(notes, callback) {
+        //     let data = []
+        //     notes.forEach(note => data.push(callback(note)))
+        //     return data
+        // }
+
+        // let notes = [5, 2, 3 , 5];
+        // let arrayData = fromEquivalent(notes, (note) => note * 2)
+        // console.log(arrayData)
+
+        //15- includes(item) check if the array contain item or no
+        //    includes(item, start) you can specify the start search index
+
+        // console.log(data.includes('id'))
+        // console.log(data.includes('id', 1))
+
+        //16- indexOf(item) return the index of the founded element, -1 if not found
+        // console.log(data.indexOf('name'))
+        // console.log(data.indexOf('age'))
+
+        //17- isArray(element) chck if the element is array or no
+        // console.log(Array.isArray(data))
+        // console.log(Array.isArray('hello'))
+        // console.log(Array.isArray({age: 29}))
+
+        //18- join(glue) join all the items of the array by using glue and return it as string
+        // console.log(['good', 'morning'].join(' '))
         
+        //19- keys() return iterator of array keys
+        let arr = ['a', , 'c']
+        console.log(arr.keys())
     </script>
 </body>
 </html>
