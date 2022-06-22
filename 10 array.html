@@ -16,6 +16,8 @@
         //1- normal way
         let data = ['id', 'name', 'email', 'created_at']
 
+        console.log(data)
+        
         //2- using new Array()
         let newData = new Array('id', 'name', 'email', 'created_at')
 
@@ -272,7 +274,7 @@
         //syntax fromEquivalent(array, callback) {} 
         //ex: fromEquivalent(notes, (note) => note * 3)
 
-        //SOLUTION
+        // SOLUTION
         // function fromEquivalent(notes, callback) {
         //     let data = []
         //     notes.forEach(note => data.push(callback(note)))
@@ -280,7 +282,7 @@
         // }
 
         // let notes = [5, 2, 3 , 5];
-        // let arrayData = fromEquivalent(notes, (note) => note * 2)
+        // let arrayData = fromEquivalent(notes, (note) => note * 3)
         // console.log(arrayData)
 
         //15- includes(item) check if the array contain item or no
@@ -305,16 +307,50 @@
         // let arr = ['a', , 'c']
         // console.log(arr.keys())
 
-        //20- lastIndexOf(item) return the last index of the item in array
+        //20- lastIndexOf(item) return the last index of the item in array, it will return -1 if not found
         // let animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+        // console.log(animals)
         // console.log(animals.lastIndexOf('Dodo'))
 
         //21- map(callback) run callback on every item of the array and return array 
-        // NOTE: if you use map but you don't return new array, this is  an anti-pattern, you should use forEach and for ... of
+        // NOTE: if you use map but you don't return new array, this is an anti-pattern, you should use forEach and for ... of
         // let notes = [10, 5, 2.5, 6],
         //     newNotes = notes.map(note => note * 2);
 
         // console.log(newNotes)
+
+        //22- of(arg1, arg2, ..., argn) create array from the given arguments
+        // let animals = Array.of('Dodo', 'Tiger', 'Penguin', 'Dodo');
+
+        // console.log(animals)
+
+        //23- pop(): remove the last from array and return it
+        // let animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+        // let dodo = animals.pop();
+        // console.log(dodo)
+        // console.log(animals)
+
+        //24- push(item): add item at the end of array and return the current length of that array
+        // let animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+        // let newAnimalsCount = animals.push('Cat')
+
+        // console.log(animals)
+        // console.log(newAnimalsCount)
+
+        //25- reduce(callback)
+        //    reduce(callback, initialValue): by default the prev element equal to first element
+        // let notes = [12, 13 , 17, 15, 14];
+        // let noteSum = notes.reduce( (prev, next, index, array) => {
+        //     console.log(index, array)
+        //     return prev + next
+        // })
+
+        // let maxNote = notes.reduce( (prev, next) => Math.max(prev, next))
+        // console.log(noteSum)
+        // console.log(maxNote)
+
+
+
     </script>
 </body>
 </html>
