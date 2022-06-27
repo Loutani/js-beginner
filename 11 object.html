@@ -182,16 +182,30 @@
         // console.log(BMWcar)
 
         //11- fromEntries(Map)
-        let notesMap = new Map([
-                ['Math', 10],
-                ['Physic', 18],
-                ['Science', 16],
-                ['English', 15],
-            ]);
+        // let notesMap = new Map([
+        //         ['Math', 10],
+        //         ['Physic', 18],
+        //         ['Science', 16],
+        //         ['English', 15],
+        //     ]);
 
-        console.log(notesMap)
+        // console.log(notesMap)
 
-        console.log(Object.fromEntries(notesMap))
+        // console.log(Object.fromEntries(notesMap))
+
+        //12- getOwnPropertyDescriptor(object, peroperty)
+        let BMWcar = {
+            type: "BMW",
+            name: "Z3"
+        }; 
+
+        let typeProperty = Object.getOwnPropertyDescriptor(BMWcar, "type")
+
+        console.log(typeProperty)
+        console.log(typeProperty.value)
+        console.log(typeProperty.writable)
+        console.log(typeProperty.configurable)
+        console.log(typeProperty.enumerable)
 
     </script>
 </body>
