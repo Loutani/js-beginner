@@ -48,19 +48,45 @@
         //4- __lookupSetter__ : deprecated
         //5- assign(target, sourceObjects ...) : create object form combine the target with list of sourceObjects
 
-        let obj1 = {
-            number1: 20,
-            number2: 100
-        },
-        obj2 = {
-            string1 : "HI ",
-            string2 : "There.",
-            number2 : 150
-        },
-        completeObject = Object.assign(obj1, obj2);
+        // let obj1 = {
+        //     number1: 20,
+        //     number2: 100
+        // },
+        // obj2 = {
+        //     string1 : "HI ",
+        //     string2 : "There.",
+        //     number2 : 150
+        // },
+        // completeObject = Object.assign(obj1, obj2);
 
-        console.log(completeObject)
+        // console.log(completeObject)
 
+        
+        class A {
+            constructor(name) {
+                this.name = name
+            }
+        }
+
+        class B {
+            constructor(age) {
+                this.age = age
+            }
+        }
+
+        class C extends A {
+            constructor(date, name) {
+                super(name)
+                this.date = date
+            }
+        }
+
+        let objA = new A('mohammed'),
+            objB = new B(30),
+            objC = new C(new Date(), "mohammed")
+            objD = Object.assign(objC, objB);
+
+        console.log(objD)
     </script>
 </body>
 </html>
