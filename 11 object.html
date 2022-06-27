@@ -60,33 +60,61 @@
         // completeObject = Object.assign(obj1, obj2);
 
         // console.log(completeObject)
-
         
-        class A {
-            constructor(name) {
-                this.name = name
-            }
-        }
+        // class A {
+        //     constructor(name) {
+        //         this.name = name
+        //     }
+        // }
 
-        class B {
-            constructor(age) {
-                this.age = age
-            }
-        }
+        // class B {
+        //     constructor(age) {
+        //         this.age = age
+        //     }
+        // }
 
-        class C extends A {
-            constructor(date, name) {
-                super(name)
-                this.date = date
-            }
-        }
+        // class C extends A {
+        //     constructor(date, name) {
+        //         super(name)
+        //         this.date = date
+        //     }
+        // }
 
-        let objA = new A('mohammed'),
-            objB = new B(30),
-            objC = new C(new Date(), "mohammed")
-            objD = Object.assign(objC, objB);
+        // let objA = new A('mohammed'),
+        //     objB = new B(30),
+        //     objC = new C(new Date(), "mohammed")
+        //     objD = Object.assign(objC, objB);
 
-        console.log(objD)
+        // console.log(objD)
+
+        //6- create(proto, properties)
+        let object1 = Object.create(null, {
+            name: {value: "mohammed", writable: true},
+            age: {value: 30, enumerable: true, configurable:true},
+            sayHello: {value: function(){
+                console.log(this.name, this.age)
+            }}
+        });
+
+        //value: to set value for that property
+        //writable: by default false, if it is true you can change the value of that property
+        //enumerable: by default false, if it is true you can extends that property
+        //configurable: by default false, if it is true you can do some effect on that object for example delete property
+
+        object1.sayHello()
+
+        console.log(object1)
+
+        object1["name"] = "potato"
+
+        console.log(object1)
+        
+        console.log(Object.assign({}, object1))
+
+        delete object1.age;
+
+        console.log(object1)
+
     </script>
 </body>
 </html>
