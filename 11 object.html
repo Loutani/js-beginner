@@ -116,22 +116,34 @@
         // console.log(object1)
 
         //7- defineProperties(object, propsDefinition)
-        let object2 = {};
+        // let object2 = {};
 
-        Object.defineProperties(object2, {
-            "name" : {
-                value: "yasser",
-                writable: true,
-                enumerable: true,
-                configurable: true
-            },
-            "age" : {
-                value: 29
-            }
+        // Object.defineProperties(object2, {
+        //     "name" : {
+        //         value: "yasser",
+        //         writable: true,
+        //         enumerable: true,
+        //         configurable: true
+        //     },
+        //     "age" : {
+        //         value: 29
+        //     }
+        // });
+
+        // console.log(object2)
+        
+        //8- defineProperty(obj, propName, propDescription)
+        let object3 = {};
+
+        Object.defineProperty(object3, 'name' , {
+            value: "yasser"
         });
 
-        console.log(object2)
-        
+        Object.defineProperty(object3, 'age' , {
+            value: 29
+        });
+
+        console.log(object3)
     </script>
 </body>
 </html>
