@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        //define object
+        let o1 = new Object(null),
+            o2 = new Object(undefined),
+            o3 = new Object('hi'),
+            o4 = new Object(true),
+            o5 = new Object(16),
+            o6 = new Object({key: 'value'}),
+            o7 = new Object([2021, 2022]);
+
+            console.log(o1)
+            console.log(o2)
+            console.log(o3)
+            console.log(o4)
+            console.log(o5)
+            console.log(o6)
+            console.log(o7)
+
+        let data = {
+            name: "mohammed",
+            age: "29"
+        }
+        
+        console.log(data.__proto__)
+    </script>
+</body>
+</html>
