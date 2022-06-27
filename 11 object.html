@@ -17,28 +17,28 @@
             o6 = new Object({key: 'value'}),
             o7 = new Object([2021, 2022]);
 
-            console.log(o1)
-            console.log(o2)
-            console.log(o3)
-            console.log(o4)
-            console.log(o5)
-            console.log(o6)
-            console.log(o7)
+            // console.log(o1)
+            // console.log(o2)
+            // console.log(o3)
+            // console.log(o4)
+            // console.log(o5)
+            // console.log(o6)
+            // console.log(o7)
 
         let data = {
             name: "mohammed",
             age: "29"
         }
         
-        console.log(data)        
+        // console.log(data)
 
         //peroperties
 
         //1- __proto__ : it may have already been removed from the relevant web standards
         
         //2- constructor: return the constructor of that object
-        console.log(data.constructor)
-        console.log(data === Object)
+        // console.log(data.constructor)
+        // console.log(data === Object)
 
         //methods
 
@@ -46,7 +46,21 @@
         //2- __defineSetter__ : deprecated
         //3- __lookupGetter__ : deprecated
         //4- __lookupSetter__ : deprecated
-        
+        //5- assign(target, sourceObjects ...) : create object form combine the target with list of sourceObjects
+
+        let obj1 = {
+            number1: 20,
+            number2: 100
+        },
+        obj2 = {
+            string1 : "HI ",
+            string2 : "There.",
+            number2 : 150
+        },
+        completeObject = Object.assign(obj1, obj2);
+
+        console.log(completeObject)
+
     </script>
 </body>
 </html>
