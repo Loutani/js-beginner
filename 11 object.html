@@ -133,17 +133,39 @@
         // console.log(object2)
         
         //8- defineProperty(obj, propName, propDescription)
-        let object3 = {};
+        // let object3 = {};
 
-        Object.defineProperty(object3, 'name' , {
-            value: "yasser"
-        });
+        // Object.defineProperty(object3, 'name' , {
+        //     value: "yasser"
+        // });
 
-        Object.defineProperty(object3, 'age' , {
-            value: 29
-        });
+        // Object.defineProperty(object3, 'age' , {
+        //     value: 29
+        // });
 
-        console.log(object3)
+        // console.log(object3)
+
+        //entries(object) 
+        let photographer = {
+            id: 1,
+            name : "Katia",
+            age : 19,
+            images: [],
+            videos: [],
+            showName: function (){
+                console.log(this.name)
+            }
+        }
+
+        console.log(photographer)
+
+        photographer.showName()
+
+        Object.entries(photographer).forEach(prop => {
+            
+            console.log(prop)
+
+        })
     </script>
 </body>
 </html>
