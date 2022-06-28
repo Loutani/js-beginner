@@ -232,25 +232,38 @@
         // console.log(Object.getOwnPropertyNames(BMWcar))
 
         //15- getOwnPropertySymbols(object)
-        let symbol1 = Symbol(2022),
-            symbol2 = Symbol(2023);
+        // let symbol1 = Symbol(2022),
+        //     symbol2 = Symbol(2023);
 
-        console.log(symbol1)
-        console.log(symbol2)
+        // console.log(symbol1)
+        // console.log(symbol2)
 
-        let object4 = {}
+        // let object4 = {}
 
-        object4[symbol1] = "first symbol"
-        object4[symbol2] = "second symbol"
+        // object4[symbol1] = "first symbol"
+        // object4[symbol2] = "second symbol"
 
-        console.log(object4)
+        // console.log(object4)
 
-        console.log(Object.getOwnPropertySymbols(object4))
+        // console.log(Object.getOwnPropertySymbols(object4))
 
-        let indexAsSymbol = Object.getOwnPropertySymbols(object4)[0]
-        console.log(indexAsSymbol)
+        // let indexAsSymbol = Object.getOwnPropertySymbols(object4)[0]
+        // console.log(indexAsSymbol)
 
-        console.log(object4[indexAsSymbol])
+        // console.log(object4[indexAsSymbol])
+
+        //16- getPrototypeOf(object)
+        let object5 = {
+            name: "Mohammed",
+            age: 29,
+            experience: "4 years",
+            showData: function() {
+                console.log(this.name, this.age, this.experience)
+            }
+        };
+
+        console.log(Object.getPrototypeOf(object5))
+
     </script>
 </body>
 </html>
