@@ -334,17 +334,26 @@
         // console.log(Object.isExtensible(object11))
 
         //21- isFrozen(object)
-        let object12 = {
-            firstName: "mohammed",
-            lastName: "loutani"
-        };
+        // let object12 = {
+        //     firstName: "mohammed",
+        //     lastName: "loutani"
+        // };
 
-        console.log(Object.isFrozen(object12))
+        // console.log(Object.isFrozen(object12))
 
-        Object.freeze(object12)
+        // Object.freeze(object12)
 
-        console.log(Object.isFrozen(object12))
+        // console.log(Object.isFrozen(object12))
 
+        //22- object1.prototype.isPrototypeOf(object2)
+        function Object13() {}
+        function Object14() {}
+
+        Object13.prototype = Object.create(Object14.prototype)
+        
+        let object13 = new Object13();
+
+        console.log(Object14.prototype.isPrototypeOf(object13))
     </script>
 </body>
 </html>
