@@ -224,12 +224,33 @@
         // console.log(nameObjectProperty.enumerable)
 
         //14- getOwnPropertyNames(object)
-        let BMWcar = {
-            type: "BMW",
-            name: "Z3"
-        };
+        // let BMWcar = {
+        //     type: "BMW",
+        //     name: "Z3"
+        // };
 
-        console.log(Object.getOwnPropertyNames(BMWcar))
+        // console.log(Object.getOwnPropertyNames(BMWcar))
+
+        //15- getOwnPropertySymbols(object)
+        let symbol1 = Symbol(2022),
+            symbol2 = Symbol(2023);
+
+        console.log(symbol1)
+        console.log(symbol2)
+
+        let object4 = {}
+
+        object4[symbol1] = "first symbol"
+        object4[symbol2] = "second symbol"
+
+        console.log(object4)
+
+        console.log(Object.getOwnPropertySymbols(object4))
+
+        let indexAsSymbol = Object.getOwnPropertySymbols(object4)[0]
+        console.log(indexAsSymbol)
+
+        console.log(object4[indexAsSymbol])
     </script>
 </body>
 </html>
