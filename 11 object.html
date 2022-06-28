@@ -311,27 +311,39 @@
         // console.log(Object.is(number3, number4))
 
         //20- isExtensible(object)
-        let object11 = Object.create(null, {
-            name: {
-                value: "mohammed",
-                enumerable: true
-            }
-        });
+        // let object11 = Object.create(null, {
+        //     name: {
+        //         value: "mohammed",
+        //         enumerable: true
+        //     }
+        // });
 
-        console.log(Object.isExtensible(object11))
+        // console.log(Object.isExtensible(object11))
 
-        object11['experience'] = "4 years";
+        // object11['experience'] = "4 years";
 
-        console.log(object11)
+        // console.log(object11)
 
-        //you cannot add new property
-        Object.preventExtensions(object11)
+        // //you cannot add new property
+        // Object.preventExtensions(object11)
 
-        object11['age'] = 29;
+        // object11['age'] = 29;
 
-        console.log(object11)
+        // console.log(object11)
 
-        console.log(Object.isExtensible(object11))
+        // console.log(Object.isExtensible(object11))
+
+        //21- isFrozen(object)
+        let object12 = {
+            firstName: "mohammed",
+            lastName: "loutani"
+        };
+
+        console.log(Object.isFrozen(object12))
+
+        Object.freeze(object12)
+
+        console.log(Object.isFrozen(object12))
 
     </script>
 </body>
