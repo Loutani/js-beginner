@@ -253,7 +253,19 @@
         // console.log(object4[indexAsSymbol])
 
         //16- getPrototypeOf(object)
-        let object5 = {
+        // let object5 = {
+        //     name: "Mohammed",
+        //     age: 29,
+        //     experience: "4 years",
+        //     showData: function() {
+        //         console.log(this.name, this.age, this.experience)
+        //     }
+        // };
+
+        // console.log(Object.getPrototypeOf(object5))
+
+        //17- hasOwn(object, prop): is replacement for object.hasOwnProperty(prop)
+        let object6 = {
             name: "Mohammed",
             age: 29,
             experience: "4 years",
@@ -262,7 +274,9 @@
             }
         };
 
-        console.log(Object.getPrototypeOf(object5))
+        console.log(Object.hasOwn(object6, 'name'))
+        console.log(Object.hasOwn(object6, 'potato'))
+        console.log(Object.hasOwn(object6, 'showData'))
 
     </script>
 </body>
