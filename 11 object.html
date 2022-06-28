@@ -293,22 +293,45 @@
         // console.log(object7.hasOwnProperty('showData'))
 
         //19- is(object1, object2)
-        let object8 = {
-            name: "mohammed"
-        },
-        object9 = {
-            age: 29
-        },
-        object10 = {
-            name: "mohammed"
-        },
-        number3 = 20,
-        number4 = 20
+        // let object8 = {
+        //     name: "mohammed"
+        // },
+        // object9 = {
+        //     age: 29
+        // },
+        // object10 = {
+        //     name: "mohammed"
+        // },
+        // number3 = 20,
+        // number4 = 20
 
-        console.log(Object.is(object8, object9))
-        console.log(Object.is(object8, object10))
-        
-        console.log(Object.is(number3, number4))
+        // console.log(Object.is(object8, object9))
+        // console.log(Object.is(object8, object10))
+
+        // console.log(Object.is(number3, number4))
+
+        //20- isExtensible(object)
+        let object11 = Object.create(null, {
+            name: {
+                value: "mohammed",
+                enumerable: true
+            }
+        });
+
+        console.log(Object.isExtensible(object11))
+
+        object11['experience'] = "4 years";
+
+        console.log(object11)
+
+        //you cannot add new property
+        Object.preventExtensions(object11)
+
+        object11['age'] = 29;
+
+        console.log(object11)
+
+        console.log(Object.isExtensible(object11))
 
     </script>
 </body>
