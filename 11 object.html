@@ -386,28 +386,40 @@
         // console.log(object16)
 
         //26- object.propertyIsEnumerable(property): check if the given property is Enumerable or no
-        let object17 = Object.create(null, {
-            name: {
-                value: "mohammed"
-            },
-            age: {
-                value: 30,
-                enumerable:true
-            },
-            friends: {
-                value: [
-                    'yasser', 'zakaria', 'mounir', 'amine'
-                ],
-                enumerable: true
-            }
-        });
+        // let object17 = Object.create(null, {
+        //     name: {
+        //         value: "mohammed"
+        //     },
+        //     age: {
+        //         value: 30,
+        //         enumerable:true
+        //     },
+        //     friends: {
+        //         value: [
+        //             'yasser', 'zakaria', 'mounir', 'amine'
+        //         ],
+        //         enumerable: true
+        //     }
+        // });
         
-        let object18 = Object.assign({}, object17)
+        // let object18 = Object.assign({}, object17)
 
-        console.log(object18)
-        console.log(object18.propertyIsEnumerable('name'))
-        console.log(object18.propertyIsEnumerable('age'))
-        console.log(object18.propertyIsEnumerable('friends'))
+        // console.log(object18)
+        // console.log(object18.propertyIsEnumerable('name'))
+        // console.log(object18.propertyIsEnumerable('age'))
+        // console.log(object18.propertyIsEnumerable('friends'))
+
+        //27- Object.seal(object): preventing new properties from being added to it and marking all existing properties as non-configurable
+        //NOTE: Values of present properties can still be changed as long as they are writable
+        let object19 = {
+            name: "Malek",
+            age: 35
+        };
+
+        console.log(Object.isSealed(object19))
+        Object.seal(object19)
+        console.log(Object.isSealed(object19))
+        
     </script>
 </body>
 </html>
