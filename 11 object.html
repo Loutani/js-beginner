@@ -346,14 +346,26 @@
         // console.log(Object.isFrozen(object12))
 
         //22- object1.prototype.isPrototypeOf(object2)
-        function Object13() {}
-        function Object14() {}
+        // function Object13() {}
+        // function Object14() {}
 
-        Object13.prototype = Object.create(Object14.prototype)
+        // Object13.prototype = Object.create(Object14.prototype)
         
-        let object13 = new Object13();
+        // let object13 = new Object13();
 
-        console.log(Object14.prototype.isPrototypeOf(object13))
+        // console.log(Object14.prototype.isPrototypeOf(object13))
+
+        //23- isSealed(object): object is sealed mean is not extensible and all it's properties are non configurable and not removable
+        let object15 = {
+            name: "Youcef",
+            age : "19"
+        }
+
+        console.log(Object.isSealed(object15));
+
+        Object.seal(object15)
+
+        console.log(Object.isSealed(object15));
     </script>
 </body>
 </html>
