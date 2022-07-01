@@ -434,14 +434,27 @@
         // console.log(object20 + 10)
 
         //29- values(object)
-        let notes = {
-            'math': 19,
-            'physic': 16,
-            'arabic': 14
-        };
+        // let notes = {
+        //     'math': 19,
+        //     'physic': 16,
+        //     'arabic': 14
+        // };
 
-        console.log(notes)
-        console.log(Object.values(notes))
+        // console.log(notes)
+        // console.log(Object.values(notes))
+
+        //USE ASSIGN TO CLONE OBJECT
+        let a = {
+            name: "mohammed"
+        },
+        b = Object.assign({}, a);
+
+        console.log(a,b)
+
+        b.name = "yasser";
+
+        console.log(a,b)
+
     </script>
 </body>
 </html>
