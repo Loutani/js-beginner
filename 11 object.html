@@ -411,15 +411,28 @@
 
         //27- Object.seal(object): preventing new properties from being added to it and marking all existing properties as non-configurable
         //NOTE: Values of present properties can still be changed as long as they are writable
-        let object19 = {
-            name: "Malek",
-            age: 35
-        };
+        // let object19 = {
+        //     name: "Malek",
+        //     age: 35
+        // };
 
-        console.log(Object.isSealed(object19))
-        Object.seal(object19)
-        console.log(Object.isSealed(object19))
-        
+        // console.log(Object.isSealed(object19))
+        // Object.seal(object19)
+        // console.log(Object.isSealed(object19))
+
+        //28- object.valueOf(property)
+        function Person(name) {
+            this.name = name
+        }
+
+        Person.prototype.valueOf = function() {
+            return this.name.length;
+        }
+
+        let object20 = new Person('kamel')
+
+        console.log(object20 + 10)
+
     </script>
 </body>
 </html>
