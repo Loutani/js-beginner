@@ -421,18 +421,27 @@
         // console.log(Object.isSealed(object19))
 
         //28- object.valueOf(property)
-        function Person(name) {
-            this.name = name
-        }
+        // function Person(name) {
+        //     this.name = name
+        // }
 
-        Person.prototype.valueOf = function() {
-            return this.name.length;
-        }
+        // Person.prototype.valueOf = function() {
+        //     return this.name.length;
+        // }
 
-        let object20 = new Person('kamel')
+        // let object20 = new Person('kamel')
 
-        console.log(object20 + 10)
+        // console.log(object20 + 10)
 
+        //29- values(object)
+        let notes = {
+            'math': 19,
+            'physic': 16,
+            'arabic': 14
+        };
+
+        console.log(notes)
+        console.log(Object.values(notes))
     </script>
 </body>
 </html>
